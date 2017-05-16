@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Calculator</title>
-  
-  
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Electrolize'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-<link rel='stylesheet prefetch' href='https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css'>
-<link rel='stylesheet prefetch' href='https://use.fontawesome.com/8867c4d100.js'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/ripples.css'>
+<html>
 
-      <link rel="stylesheet" href="css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator by Ryan Schill</title>
 
-  
-</head>
 
-<body>
-  <body>
-        
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700'>
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Electrolize'>
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+        <link rel='stylesheet prefetch' href='https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css'>
+        <link rel='stylesheet prefetch' href='https://use.fontawesome.com/8867c4d100.js'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/ripples.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+
+    <body>
+
         <div class="container" id="app-container">
-            
+
             <div class="page-header">
                 <h1>Calculator</h1>
             </div>
-            
+
             <div id="calc-container">
                 <div class="row">
                     <div class="fixed-width" id="output-col">
@@ -35,55 +35,63 @@
                     </div>
                 </div>
 
-                        <div class="btn-group btn-group-justified">
-                            <button type="button" class="btn keypad" id="clear-all" value="ce">CE</button>
-                            <button type="button" class="btn keypad" id="clear" value="c">C</button>
-                            <button type="button" class="btn keypad" id="delete" value="del">del</button>
-                            <button type="button" class="btn keypad" id="divide" value="/">/</button>
-                        </div>
+                <div class="btn-group btn-group-justified">
+                    <button type="button" class="btn keypad" id="clear-all" value="ce">CE</button>
+                    <button type="button" class="btn keypad" id="clear" value="c">C</button>
+                    <button type="button" class="btn keypad" id="delete" value="del">del</button>
+                    <button type="button" class="btn keypad" id="divide" value="/">/</button>
+                </div>
 
 
-                        <div class="btn-group btn-group-justified">
-                            <button type="button" class="btn num-btn keypad" id="7" value="7">7</button>
-                            <button type="button" class="btn num-btn keypad" id="8" value="8">8</button>
-                            <button type="button" class="btn num-btn keypad" id="9" value="9">9</button>
-                            <button type="button" class="btn num-btn keypad" id="multiply" value="*">X</button>
-                        </div>
+                <div class="btn-group btn-group-justified">
+                    <button type="button" class="btn num-btn keypad" id="7" value="7">7</button>
+                    <button type="button" class="btn num-btn keypad" id="8" value="8">8</button>
+                    <button type="button" class="btn num-btn keypad" id="9" value="9">9</button>
+                    <button type="button" class="btn num-btn keypad" id="multiply" value="*">X</button>
+                </div>
 
 
-                        <div class="btn-group btn-group-justified">
-                            <button type="button" class="btn num-btn keypad" id="4" value="4">4</button>
-                            <button type="button" class="btn num-btn keypad" id="5" value="5">5</button>
-                            <button type="button" class="btn num-btn keypad" id="6" value="6">6</button>
-                            <button type="button" class="btn num-btn keypad" id="subtract" value="-">-</button>
-                        </div>
+                <div class="btn-group btn-group-justified">
+                    <button type="button" class="btn num-btn keypad" id="4" value="4">4</button>
+                    <button type="button" class="btn num-btn keypad" id="5" value="5">5</button>
+                    <button type="button" class="btn num-btn keypad" id="6" value="6">6</button>
+                    <button type="button" class="btn num-btn keypad" id="subtract" value="-">-</button>
+                </div>
 
 
-                        <div class="btn-group btn-group-justified">
-                            <button type="button" class="btn num-btn keypad" id="1" value="1">1</button>
-                            <button type="button" class="btn num-btn keypad" id="2" value="2">2</button>
-                            <button type="button" class="btn num-btn keypad" id="3" value="3">3</button>
-                            <button type="button" class="btn num-btn keypad" id="addition" value="+">+</button>
-                        </div>
+                <div class="btn-group btn-group-justified">
+                    <button type="button" class="btn num-btn keypad" id="1" value="1">1</button>
+                    <button type="button" class="btn num-btn keypad" id="2" value="2">2</button>
+                    <button type="button" class="btn num-btn keypad" id="3" value="3">3</button>
+                    <button type="button" class="btn num-btn keypad" id="addition" value="+">+</button>
+                </div>
 
 
-                        <div class="btn-group btn-group-justified">
-                            <button type="button" class="btn num-btn keypad" id="zero" value="0">0</button>
-                            <button type="button" class="btn keypad" id="decimal" value=".">.</button>
-                            <button type="button" class="btn keypad" id="equal" value="=">=</button>
-                        </div>
+                <div class="btn-group btn-group-justified">
+                    <button type="button" class="btn num-btn keypad" id="zero" value="0">0</button>
+                    <button type="button" class="btn keypad" id="decimal" value=".">.</button>
+                    <button type="button" class="btn keypad" id="equal" value="=">=</button>
+                </div>
 
             </div>
         </div>
+
+        <div class="footer-container navbar-fixed-bottom">
+            <div class="container">
+                <p class="footer-tag text-center">Designed and programmed by Ryan Schill | Copyright &copy 2016-2017 Ryan Schill</p>
+            </div>
+        </div>
+
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/material.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/ripples.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.5.3/math.min.js'></script>
+
+        <script src="js/index.js"></script>
+
     </body>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/material.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/ripples.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.5.3/math.min.js'></script>
 
-    <script src="js/index.js"></script>
-
-</body>
 </html>

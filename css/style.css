@@ -1,3 +1,7 @@
+body {
+    margin-bottom: 50px;
+}
+
 h1 {
     color: #FF5722;
 }
@@ -22,6 +26,7 @@ h1 {
 
 #app-container {
     text-align: center;
+    margin-top: 64px;
 }
 
 .btn {
@@ -29,10 +34,7 @@ h1 {
     background-color: #ffb199;
 }
 
-.btn:not(.btn-raised):not(.btn-link):hover,
-.btn:not(.btn-raised):not(.btn-link):active,
-.btn:not(.btn-raised):not(.btn-link):focus,
-.btn:not(.btn-raised):not(.btn-link):visited {
+.btn:not(.btn-raised):not(.btn-link):hover, .btn:not(.btn-raised):not(.btn-link):active, .btn:not(.btn-raised):not(.btn-link):focus, .btn:not(.btn-raised):not(.btn-link):visited {
     background-color: #FF7043;
     transition: ease-in-out;
     transition-duration: 250ms;
@@ -44,6 +46,15 @@ h1 {
 }
 
 #zero {
-  padding-left: 60px;
-  padding-right: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.footer-container {
+    background-color: #d9d9d9;
+    height: 50px;
+}
+
+.footer-tag {
+    padding-top: 14px;
 }
