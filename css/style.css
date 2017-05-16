@@ -1,0 +1,49 @@
+h1 {
+    color: #FF5722;
+}
+
+#output-col {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #FF5722;
+    border-radius: 8px;
+    background-color: #d9d9d9;
+}
+
+#output {
+    min-height: 36px;
+    font-size: 32px;
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 0;
+    font-family: 'Electrolize', sans-serif;
+}
+
+#app-container {
+    text-align: center;
+}
+
+.btn {
+    border: 0.5px solid #eeeeee;
+    background-color: #ffb199;
+}
+
+.btn:not(.btn-raised):not(.btn-link):hover,
+.btn:not(.btn-raised):not(.btn-link):active,
+.btn:not(.btn-raised):not(.btn-link):focus,
+.btn:not(.btn-raised):not(.btn-link):visited {
+    background-color: #FF7043;
+    transition: ease-in-out;
+    transition-duration: 250ms;
+    outline: none;
+}
+
+.operator-icons {
+    font-size: 24px;
+}
+
+#zero {
+  padding-left: 60px;
+  padding-right: 60px;
+}
